@@ -1,0 +1,21 @@
+{
+  "name": "az-search-scripts",
+  "version": "2.0.0",
+  "description": "Azure AI Search utilities for querying and deleting expired documents",
+  "type": "module",
+  "scripts": {
+    "search": "bun run src/search.ts",
+    "search-and-delete": "bun run src/search-and-delete.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@azure/search-documents": "^12.2.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
